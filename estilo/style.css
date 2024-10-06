@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --fonte01: Verdana, Geneva, Tahima, sans-serif;
+    --fonte02: "Passion One", sans-serif;
+    --fonte03: "Caveat", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte01);
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    padding-top: 50px;
+    font-family: var(--fonte02);
+    font-size: 8vw;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+
+}
+header p {
+    padding-bottom: 50px;
+
+}
+
+section {
+    background-color: white;
+    color: black;
+    padding: 10vh 0px 10vh 30px;
+    font-family: var(--fonte03);
+    font-size: 4vw;
+    line-height: 2em;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section.imagem {
+        background-color: rgb(56, 56, 56);
+        color: white;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.596) inset;
+        
+}
+
+section#fundo1 {
+    background-image: url(../imagens/background001.jpg);
+
+}
+
+section#fundo2 {
+    background-image: url(../imagens/background002.jpg);
+
+}
+
+section.imagem p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.384);
+    text-shadow: 1px 1px 0px black;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+    padding: 10px;
+}
